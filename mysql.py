@@ -8,7 +8,7 @@ debug_mode = False
 ip = "0.0.0.0"
 if sys.argv[1]:
     print("usage: python3 mysql.py port")
-port = sys.argv[1]
+port = int(sys.argv[1])
 
 files = {
     b"/flag",
