@@ -2,10 +2,13 @@ import random
 import socket
 import time
 from threading import Thread
+import sys
 
 debug_mode = False
 ip = "0.0.0.0"
-port = 3307
+if sys.argv[1]:
+    print("usage: python3 mysql.py port")
+port = sys.argv[1]
 
 files = {
     b"/flag",
