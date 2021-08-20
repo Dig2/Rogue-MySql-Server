@@ -6,7 +6,7 @@ import sys
 
 debug_mode = False
 ip = "0.0.0.0"
-if sys.argv[1]:
+if len(sys.argv) < 2:
     print("usage: python3 mysql.py port")
 port = int(sys.argv[1])
 
